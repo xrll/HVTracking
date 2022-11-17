@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataFile\20220427 - 上午 -3   右式  双枪 T1 h.txt" />
+    <None Remove="DataFile\20220427 - 上午 -3   右式  双枪 T2 h.txt" />
+    <None Remove="DataFile\20220427 - 下午 -2   右式  双枪 T3 h.txt" />
+    <None Remove="DataFile\20220427 - 下午 -2   右式  双枪 T4 h.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DataFile\20220427 - 上午 -3   右式  双枪 T1 h.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFile\20220427 - 上午 -3   右式  双枪 T2 h.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFile\20220427 - 下午 -2   右式  双枪 T3 h.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFile\20220427 - 下午 -2   右式  双枪 T4 h.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="HTrackingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
